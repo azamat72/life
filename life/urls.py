@@ -8,5 +8,5 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('backend.routes')),
-    path('news/', include('news.urls')),
+
 ]   + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
